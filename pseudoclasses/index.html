@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo class</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+        div{
+            display: inline-block;
+            background-color: aqua;
+            text-align: center;
+            width: 200px;   
+            height: 200px;
+            
+            border: 1px solid black;
+        }
+        div:hover{
+            background-color: blue;
+
+        }
+       
+        
+        span > p{
+            color:red;
+           
+           display: none;
+           
+
+        }
+        span:hover >p {display: block;
+            color: red;
+            
+
+
+        }
+        span:hover{
+            color: red;}
+
+
+            /* Pseudos elementos */
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited{
+            color: darkred;
+
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a::after{
+            content: '⚤' ;
+            color: black;
+            
+
+            
+         }
+         a::before{
+            content: '✓';
+            color: black;
+         }
+         .dedo{
+            font-size: 4em;
+            
+            
+         }
+        
+
+        
+    </style>
+
+
+</head>
+<body>
+    <div id="d1">01</div>
+    <div id="d2">02</div>
+    <div id="d3">03</div>
+    <h1>exemplo de hover</h1>
+    <p>passe o mouse sobre o texto abaixo </p>
+    <span>passe o mouse aqui
+        <p>Curioso, sai fora daki!!!!  <p class="dedo"> ☞</p> </p>
+
+
+    </span>
+     <h1>Pseudo elementos em css</h1>
+     <ul>
+        
+        <li><a href="https://www.youtube.com/watch?v=Lvo5bHwEnsY" target="_blank">canal do paulo o loko</a> </li>
+        <li><a href="https://www.youtube.com/@Giramille" target="_blank">canal da gira mile</a></li>
+        <li><a href="https://www.cursoemvideo.com/meus-cursos/" target="_blank">site do curso em video</a></li>
+    
+    
+    
+    </ul>
+    
+</body>
+</html>
